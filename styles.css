@@ -1,0 +1,51 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box; /* Added to include padding in the height */
+}
+
+.input-section, .output-section {
+    flex: 1;
+    display: flex; /* Use flex to align children */
+    flex-direction: column;
+}
+
+.button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0.5;
+    padding: 0 10px; /* Optional padding for aesthetics */
+}
+
+textarea, #output-text {
+    flex-grow: 1;
+    width: 100%;
+    margin: 0;
+    height: 100%; /* Adjusted to fill the container */
+    background-color: #808080; /* Set the background color here */
+    color: #FFFFFF; /* Set text color here */
+    border: none; /* Remove border */
+    padding: 10px; /* Add some padding inside the text elements */
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+textarea {
+    resize: none; /* Keep existing functionality */
+    align-self: flex-start;
+}
+
+#output-text {
+    align-self: flex-start;
+    overflow: auto; /* Keep existing functionality */
+    padding: 10px;
+}
