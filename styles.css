@@ -60,6 +60,7 @@ textarea {
     align-self: flex-start;
     overflow: auto; 
     padding: 10px;
+    font-weight: bold;
 }
 
 .button-section button {
