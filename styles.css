@@ -2,20 +2,31 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
 }
+
+/* .banner {
+    display: block;
+    width: 100%;
+    background-image: url('images/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px; 
+} */
 
 .container {
     display: flex;
     height: 100vh;
     padding: 20px;
-    box-sizing: border-box; /* Added to include padding in the height */
+    box-sizing: border-box;
 }
 
 .input-section, .output-section {
     flex: 1;
-    display: flex; /* Use flex to align children */
+    display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .button-section {
@@ -24,28 +35,62 @@ body, html {
     justify-content: center;
     flex-direction: column;
     flex: 0.5;
-    padding: 0 10px; /* Optional padding for aesthetics */
+    padding: 0 10px;
 }
 
 textarea, #output-text {
     flex-grow: 1;
     width: 100%;
     margin: 0;
-    height: 100%; /* Adjusted to fill the container */
-    background-color: #808080; /* Set the background color here */
-    color: #FFFFFF; /* Set text color here */
-    border: none; /* Remove border */
-    padding: 10px; /* Add some padding inside the text elements */
-    box-sizing: border-box; /* Include padding in the width and height */
+    height: 100%;
+    background-color: #808080; 
+    color: #FFFFFF; 
+    border: none; 
+    padding: 10px; 
+    box-sizing: border-box; 
 }
 
 textarea {
-    resize: none; /* Keep existing functionality */
+    resize: none; 
     align-self: flex-start;
 }
 
 #output-text {
+    white-space: pre-line;
     align-self: flex-start;
-    overflow: auto; /* Keep existing functionality */
+    overflow: auto; 
     padding: 10px;
+}
+
+.button-section button {
+    background-color: #4CAF50; /* A nice green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for button hover */
+}
+
+.button-section button:hover {
+    background-color: #45a049; /* A darker green on hover */
+}
+
+/* Extra styles for the Save as Text File button for differentiation */
+#save-text-button {
+    background-color: #008CBA; /* Blue */
+}
+
+#save-text-button:hover {
+    background-color: #007B9A; /* Darker blue on hover */
+}
+
+textarea::placeholder {
+    color: #c0c0c0;
+    opacity: 1;
 }
