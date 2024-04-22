@@ -6,14 +6,6 @@ body, html {
     background-color: #f4f4f4;
 }
 
-/* .banner {
-    display: block;
-    width: 100%;
-    background-image: url('images/pic1.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px; 
-} */
 
 .container {
     display: flex;
@@ -95,3 +87,5 @@ textarea::placeholder {
     color: #c0c0c0;
     opacity: 1;
 }
+
+
