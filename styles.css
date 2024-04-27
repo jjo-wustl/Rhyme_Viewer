@@ -89,3 +89,7 @@ textarea::placeholder {
 }
 
 
+.image-above,
+.image-below {
+    padding-left: 14px;
+}
